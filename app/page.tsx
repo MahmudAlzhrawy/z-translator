@@ -108,7 +108,7 @@ const exportToExcel = () => {
             <table className="w-full text-left border-collapse">
               <thead className="sticky top-0 bg-blue-100">
                 <tr>
-                  <th className="border p-2 w-1/2">#</th>
+                  <th className="border p-2 w-10">#</th>
                   <th className="border p-2 w-1/2">English Word</th>
                   <th className="border p-2 w-1/2">Arabic Translation</th>
                 </tr>
