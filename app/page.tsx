@@ -108,6 +108,7 @@ const exportToExcel = () => {
             <table className="w-full text-left border-collapse">
               <thead className="sticky top-0 bg-blue-100">
                 <tr>
+                  <th className="border p-2 w-1/2">#</th>
                   <th className="border p-2 w-1/2">English Word</th>
                   <th className="border p-2 w-1/2">Arabic Translation</th>
                 </tr>
@@ -118,6 +119,7 @@ const exportToExcel = () => {
                     key={i}
                     className="odd:bg-white even:bg-blue-50 hover:bg-blue-100 transition"
                   >
+                    <td className="border p-2">{i + 1}</td>
                     <td className="border p-2">{item.word}</td>
                     <td className="border p-2">{item.translation}</td>
                   </tr>
