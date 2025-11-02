@@ -15,7 +15,7 @@ export default function TranslatePage() {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://localhost:5000/translate", {
+      const res = await fetch("https://trans-api-eight.vercel.app/translate", {
         method: "POST",
         body: formData,
       });
@@ -65,7 +65,7 @@ const exportToExcel = () => {
 };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col items-center justify-center px-6 py-10">
+    <div className="min-h-screen bg-linear-to-br from-blue-50 to-blue-100 flex flex-col items-center justify-center px-6 py-10">
       <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-4xl">
         <h1 className="text-3xl font-bold text-center text-blue-700 mb-6">
           📘 ترجمة كلمات PDF إلى العربية
